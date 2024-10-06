@@ -10,7 +10,7 @@ const Timer=()=>{
 useEffect(()=>{
  timer= setInterval(()=>{
   setSeconds(seconds+1);
-  if(seconds===59){
+  if(seconds>59){
     setMinutes(minutes+1);
     setSeconds(0);
   }
